@@ -1,0 +1,33 @@
+/* Container for the button and either AddProductForm or ProductList */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Style for the Add Product button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .container>div {
+        flex: 1;
+        max-width: 50%;
+        /* Adjust as necessary based on your layout */
+    }
+}

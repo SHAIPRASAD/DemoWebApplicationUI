@@ -1,0 +1,75 @@
+/* Base styles for the form */
+form {
+    max-width: 25rem;
+    /* equivalent to 400px */
+    margin: 0 auto;
+    padding: 1.25rem;
+    /* equivalent to 20px */
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    /* equivalent to 8px */
+    background-color: #f9f9f9;
+}
+
+/* Styles for form inputs and buttons */
+input[type="email"],
+input[type="password"],
+input[type="username"] {
+    width: calc(100% - 1.25rem);
+    /* equivalent to 20px */
+    padding: 0.625rem;
+    /* equivalent to 10px */
+    margin: 0.625rem 0;
+    /* equivalent to 10px */
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    /* equivalent to 4px */
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 0.625rem;
+    /* equivalent to 10px */
+    margin: 0.625rem 0;
+    /* equivalent to 10px */
+    border: none;
+    border-radius: 0.25rem;
+    /* equivalent to 4px */
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 37.5rem) {
+
+    /* equivalent to 600px */
+    form {
+        max-width: 100%;
+        padding: 0.625rem;
+        /* equivalent to 10px */
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="username"] {
+        width: calc(100% - 1.25rem);
+        /* equivalent to 20px */
+        padding: 0.5rem;
+        /* equivalent to 8px */
+        margin: 0.5rem 0;
+        /* equivalent to 8px */
+    }
+
+    button {
+        padding: 0.5rem;
+        /* equivalent to 8px */
+        margin: 0.5rem 0;
+        /* equivalent to 8px */
+    }
+}
